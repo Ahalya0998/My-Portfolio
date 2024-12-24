@@ -1,0 +1,65 @@
+/* Reset margin and padding
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;  Prevent scrolling 
+} */
+
+/* Reset and Base Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+    font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Heading */
+.container h1 {
+    font-size: 2.5rem; /* Adjust size for desktops */
+    margin-bottom: 1rem;
+}
+
+/* Paragraph */
+.container p {
+    font-size: 1.2rem; /* Adjust size for desktops */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container h1 {
+        font-size: 2rem; /* Adjust size for tablets */
+    }
+
+    .container p {
+        font-size: 1rem; /* Adjust size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .container h1 {
+        font-size: 1.5rem; /* Adjust size for mobile */
+    }
+
+    .container p {
+        font-size: 0.9rem; /* Adjust size for mobile */
+    }
+}
+
